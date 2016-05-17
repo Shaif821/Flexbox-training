@@ -1,0 +1,117 @@
+body {
+    background-color: whitesmoke;
+    font-family: Calibri;
+    
+}
+
+
+/*----------------Header------------*/
+header {
+     /*    Neemt de complete breedte in, dus allen elementen moeten er wel naast moeten staan. */
+    width: 100%;
+    padding-left: 1em;
+}
+
+header h2 {
+    color: firebrick;
+    letter-spacing: .2em;
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 3px 3px #333;
+}
+
+header p {
+    text-align: center;
+    font-style:italic;
+    color: goldenrod;
+
+    
+}
+/*-------------Einde Header--------*/
+
+
+/*-------Wrapper =  PARENT------*/
+.wrapper {
+/*    Zorgt ervoor dat de flex layout kan plaats vinden
+    en ook voor gelijke kolom hoogte.:*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--------------------Tekst-----------------*/
+/*Section = CHILD*/
+section.link {
+    padding: 2em;
+    min-width: 15em;
+    margin: .9em;
+    font-weight: 100;
+    background-color: firebrick;
+/*    Rand*/
+    border-radius: 2em;
+    flex: 1;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+}
+
+section.link:hover {
+    background-color:#FE9A2E;
+    padding: 2em;
+    min-width: 15em;
+    margin: .9em;
+    font-weight: 100;
+    border: 3px solid firebrick;
+}
+
+
+/*-----Button-------*/
+button.but {
+     border-color:rgba(0, 0, 0, 0.1);
+     background-color: goldenrod;
+     height: 2.5em;
+    border-radius: 5em;
+    border: 1px solid firebrick;
+    margin-top: auto;
+}
+button.but:hover {
+     border-color:rgba(0, 0, 0, 0.1);
+     background-color: #B40404;
+}
+.text {
+    margin: auto;
+    text-align: center;
+}
+
+
+/*---link---*/
+a:link {
+    text-decoration: none;
+    
+}
+a:visited {
+    text-decoration: none;
+    color:gold;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+a:active {
+    text-decoration: none;
+}
+/*--Einde links--*/
+
+/*-------------Einde tekst------------*/
+
+
+
+
+
+/*-------Validatie-----*/
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
+

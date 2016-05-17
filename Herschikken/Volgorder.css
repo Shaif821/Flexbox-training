@@ -1,0 +1,139 @@
+body {
+    font-family: calibri;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: firebrick;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1em;
+}
+
+aside {
+    padding: 1em;
+    background-color: firebrick; 
+}
+
+article {
+    padding: 1em;
+}
+
+footer {
+    padding: 1em;
+    background-color: black;
+    color: firebrick;
+}
+
+
+
+
+/* Lay-out met flexbox */ 
+
+/* Voor mobiel */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    order:1;
+}
+
+footer:after {
+    content: ' Voor smartphones';
+}
+
+
+
+
+/* Vanaf 26em */
+
+@media screen and (min-width: 26em){
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article {
+        width: 100%;
+    }
+    
+/*     Verdeelt de asides / Staan naast elkaar */
+    aside {
+        flex:1;
+    }
+
+    footer:after {
+        content: 'Dit is voor schermen tussen 26 em en 36 em';
+}
+    
+}
+
+
+    
+/*    Voor schermen vanag 36em */
+    @media screen and (min-width: 36em) {
+        main {
+            flex-wrap: nowrap;
+        }
+        
+/*        Maakt de verhoudingen wat gunstiger */
+        article {
+            width: auto;
+            flex: 4;
+        }
+        aside {
+            order:0;
+        }
+        
+        footer:after {
+            content: 'Dit is voor schermen groter dan 36em';
+        }
+    }
+
+
+
+/*Validatie*/
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

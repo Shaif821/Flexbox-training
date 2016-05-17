@@ -1,0 +1,125 @@
+body {
+    background-color: whitesmoke;
+    font-family: Calibri;
+    
+}
+
+
+/*Header*/
+header {
+     /*    Neemt de complete breedte in, dus allen elementen moeten er wel naast moeten staan. */
+    width: 100%;
+    padding-left: 1em;
+}
+
+header h2 {
+    color: firebrick;
+    letter-spacing: .2em;
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 3px 3px #333;
+}
+
+header p {
+    text-align: center;
+    font-style:italic;
+    color: white;
+
+    
+}
+/*Einde Header*/
+
+
+/*Wrapper =  PARENT*/
+.wrapper {
+/*    Zorgt ervoor dat de flex layout kan plaats vinden
+    en ook voor gelijke kolom hoogte.:*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Tekst*/
+/*Section = CHILD*/
+section.Vakje {
+    padding: 2em;
+    min-width: 15em;
+    margin: .9em;
+    font-weight: 100;
+    color: white;
+    background-color: #333;
+/*    Rand*/
+    border-radius: 2em;
+    flex: 1;
+    border: 3px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+section.Vakje img {
+    width: 100%;
+    height: auto;
+}
+
+section.Vakje:hover {
+    background-color:darkgrey;
+    padding: 2em;
+    min-width: 15em;
+    margin: .9em;
+    font-weight: 100;
+    border: 3px solid white;
+}
+
+
+/*Button*/
+button {
+     border-color:rgba(0, 0, 0, 0.1);
+     background-color: black;
+     height: 2.5em;
+    border-radius: 5em;
+    border: 1px solid white;
+    margin-top: auto;
+    color: white;
+}
+button:hover {
+     border-color:rgba(0, 0, 0, 0.1);
+     background-color: white;
+    color: black;
+}
+.text {
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+/*link*/
+a:link {
+    text-decoration: none;
+    
+}
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+a:active {
+    text-decoration: none;
+}
+/*Einde links*/
+
+/*Einde tekst*/
+
+
+
+
+/*Validatie*/
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
+
