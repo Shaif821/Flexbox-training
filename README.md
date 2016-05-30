@@ -7,4 +7,4 @@ pagina met asides
 
 
 Link naar Ma-cloud:
-22238.hosts.ma-cloud.nl/periode3/FOP/Periode%204/Flexbox-training/index.html
+[http://22238.hosts.ma-cloud.nl/periode3/FOP/Periode-4/Flexbox-training/index.html]

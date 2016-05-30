@@ -5,7 +5,7 @@ body {
 }
 
 
-/*----------------Header------------*/
+/*Header*/
 header {
      /*    Neemt de complete breedte in, dus allen elementen moeten er wel naast moeten staan. */
     width: 100%;
@@ -27,10 +27,10 @@ header p {
 
     
 }
-/*-------------Einde Header--------*/
+/*Einde Header*/
 
 
-/*-------Wrapper =  PARENT------*/
+/*Wrapper =  PARENT*/
 .wrapper {
 /*    Zorgt ervoor dat de flex layout kan plaats vinden
     en ook voor gelijke kolom hoogte.:*/
@@ -38,7 +38,7 @@ header p {
     flex-wrap: wrap;
 }
 
-/*--------------------Tekst-----------------*/
+/*Tekst*/
 /*Section = CHILD*/
 section.link {
     padding: 2em;
@@ -64,8 +64,9 @@ section.link:hover {
 }
 
 
-/*-----Button-------*/
-button.but {
+/*Button*/
+button {
+    width: 10em;
      border-color:rgba(0, 0, 0, 0.1);
      background-color: goldenrod;
      height: 2.5em;
@@ -83,7 +84,7 @@ button.but:hover {
 }
 
 
-/*---link---*/
+/*link*/
 a:link {
     text-decoration: none;
     
@@ -99,15 +100,15 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-/*--Einde links--*/
+/*Einde links*/
 
-/*-------------Einde tekst------------*/
-
-
+/*Einde tekst*/
 
 
 
-/*-------Validatie-----*/
+
+
+/*Validatie*/
 #validatie img {
     height: 1em;
     width: auto;
