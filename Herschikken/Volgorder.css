@@ -6,11 +6,9 @@ body {
 header {
     background-color: black;
     color: firebrick;
-}
-
-header h1 {
     margin: 0;
-    padding: 1em;
+    padding: 0;
+   
 }
 
 aside {
@@ -29,7 +27,31 @@ footer {
 }
 
 
+ul{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+}
 
+ul li {
+    list-style-type: none;
+    text-decoration-color: none;
+    text-decoration-line: none;
+    font-size: 24px;
+}
+
+ul li a {
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    font-family: Century Gothic;
+}
+
+ul li a:hover{
+    color: red;
+}
 
 /* Lay-out met flexbox */ 
 
@@ -48,7 +70,14 @@ footer:after {
     content: ' Voor smartphones';
 }
 
-
+#wrapper {
+/*    Zorgt ervoor dat de flex layout kan plaats vinden
+    en ook voor gelijke kolom hoogte.:*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+}
 
 
 /* Vanaf 26em */
@@ -71,6 +100,20 @@ footer:after {
         content: 'Dit is voor schermen tussen 26 em en 36 em';
 }
     
+    nav ul li{
+        flex: 1;
+        flex-grow: 1;
+    }
+    
+   input[type=text] {
+/*    Zorgt ervoor dat de flex layout kan plaats vinden
+    en ook voor gelijke kolom hoogte.:*/
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    
+}
+    
 }
 
 
@@ -89,6 +132,10 @@ footer:after {
         aside {
             order:0;
         }
+        
+        nav ul li{
+        flex: 1;
+    }
         
         footer:after {
             content: 'Dit is voor schermen groter dan 36em';

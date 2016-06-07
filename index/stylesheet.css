@@ -4,7 +4,6 @@ body {
     
 }
 
-
 /*Header*/
 header {
      /*    Neemt de complete breedte in, dus allen elementen moeten er wel naast moeten staan. */
@@ -43,28 +42,26 @@ header p {
 section.Vakje {
     padding: 2em;
     min-width: 15em;
-    margin: .9em;
+    margin: .5em;
     font-weight: 100;
     color: white;
     background-color: #333;
 /*    Rand*/
     border-radius: 2em;
-    flex: 1;
+    flex: 1 0 20%;
     border: 3px solid whitesmoke;
     display: flex;
     flex-direction: column;
 }
 
 section.Vakje img {
-    width: 100%;
+ width: 100%;
     height: auto;
+    
 }
 
 section.Vakje:hover {
     background-color:darkgrey;
-    padding: 2em;
-    min-width: 15em;
-    margin: .9em;
     font-weight: 100;
     border: 3px solid white;
 }
@@ -77,7 +74,7 @@ button {
      height: 2.5em;
     border-radius: 5em;
     border: 1px solid white;
-    margin-top: auto;
+    margin:auto auto 0 auto;
     color: white;
 }
 button:hover {

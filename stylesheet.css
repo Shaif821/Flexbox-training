@@ -1,6 +1,16 @@
+html, body {
+    height: 100%;
+    margin:0; 
+    padding: 0;
+}
+
 body {
     background-color: whitesmoke;
     font-family: Calibri;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
     
 }
 
@@ -36,48 +46,42 @@ header p {
     en ook voor gelijke kolom hoogte.:*/
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+   
+    
 }
 
 /*Tekst*/
 /*Section = CHILD*/
 section.link {
-    padding: 2em;
-    min-width: 15em;
-    margin: .9em;
+    padding: 5em;
+    min-width: 10em;
+    margin: 1em;
     font-weight: 100;
     background-color: firebrick;
 /*    Rand*/
     border-radius: 2em;
-    flex: 1;
+    flex: 0 0 25em;
     border: 3px solid goldenrod;
     display: flex;
     flex-direction: column;
+    flex: 1;
+   
+    
 }
+
+
 
 section.link:hover {
     background-color:#FE9A2E;
-    padding: 2em;
-    min-width: 15em;
-    margin: .9em;
-    font-weight: 100;
     border: 3px solid firebrick;
+    
 }
 
-
-/*Button*/
-button {
-    width: 10em;
-     border-color:rgba(0, 0, 0, 0.1);
-     background-color: goldenrod;
-     height: 2.5em;
-    border-radius: 5em;
-    border: 1px solid firebrick;
+section.link footer {
     margin-top: auto;
 }
-button.but:hover {
-     border-color:rgba(0, 0, 0, 0.1);
-     background-color: #B40404;
-}
+
 .text {
     margin: auto;
     text-align: center;
